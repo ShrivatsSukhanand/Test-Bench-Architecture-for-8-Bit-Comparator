@@ -15,8 +15,8 @@ void'($urandom(4568)); // Change seed for different random sequences
 ```
 
 The following is the design for the 8-bit comparator. The focus of this project is implementing the testbench architecture
-<img width="551" height="857" alt="image" src="https://github.com/user-attachments/assets/27170da8-839b-4ded-aab0-2977cdbf2eb9" />
-
+<img width="819" height="706" alt="Screenshot 2026-04-25 200304" src="https://github.com/user-attachments/assets/0d88e9ae-f810-4c14-907e-79256777d5af" />
 
 the following is the screenshot of the output
+<img width="551" height="857" alt="image" src="https://github.com/user-attachments/assets/27170da8-839b-4ded-aab0-2977cdbf2eb9" />
 <img width="1100" height="156" alt="image" src="https://github.com/user-attachments/assets/2c8a2a28-27bd-4ebc-85ba-2b6f142a8335" />
