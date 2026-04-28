@@ -1,7 +1,6 @@
 # Test-Bench-Architecture-for-8-Bit-Comparator
-Academic project in 5th sem, 2025
 
-In this architecture, the generator creates transactions of two 8-bit unsigned numbers using randc — which cycles through unique values before repeating, unlike rand — passes them to the driver via a mailbox, and drives them to the DUT through an interface. Can be simulated using Aldec Riviera-Pro 2025.04 on EDA Playground through the link: [EDA Playground](https://www.edaplayground.com/x/bfV_)
+The generator creates two 8-bit unsigned numbers using randc and passes them to the driver via a mailbox, which drives them to the DUT through an interface. The monitor captures the DUT's inputs and output, forwarding them to the scoreboard, which computes the expected result internally and compares it against the DUT output, reporting PASS or FAIL. Can be simulated using Aldec Riviera-PRO 2025.04 on EDA Playground through the link: [EDA Playground](https://www.edaplayground.com/x/bfV_)
 
 A constraint 'keepshort' limits both inputs to the range [100:110], increasing the likelihood of equality conditions for demonstration purposes.
 ```systemverilog
@@ -16,7 +15,8 @@ void'($urandom(4568)); // Change seed for different random sequences
 ```
 
 The following is the design for the 8-bit comparator. The focus of this project is implementing the testbench architecture
-<img width="819" height="706" alt="image" src="https://github.com/user-attachments/assets/760b4771-b68d-4bc0-85a8-ea26bdb63ad5" />
+<img width="551" height="857" alt="image" src="https://github.com/user-attachments/assets/27170da8-839b-4ded-aab0-2977cdbf2eb9" />
+
 
 the following is the screenshot of the output
-<img width="721" height="762" alt="image" src="https://github.com/user-attachments/assets/e1aecc50-29aa-4aa1-a7ca-64c60793c09e" />
+<img width="1100" height="156" alt="image" src="https://github.com/user-attachments/assets/2c8a2a28-27bd-4ebc-85ba-2b6f142a8335" />
